@@ -14,7 +14,7 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
-
+/* HEADER SECTION */
 * {
     background-color: #F5F8FF;
 
@@ -46,4 +46,22 @@
 .menu-dif-color2 {
     color: #252432;
     font-weight: 400;
+}
+
+/* BANNER SECTION */
+.banner{
+    width: 1140px;
+    display: flex;
+    margin:auto ;
+}
+.banner-title{
+    font-size: 65px;
+    font-weight: 600;
+}
+.orange-text{
+    color: #E95A08;
+}
+.banner-para{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
 }
