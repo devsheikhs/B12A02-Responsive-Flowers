@@ -1,0 +1,12 @@
+*{
+    background-color: #F5F8FF;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu{
+display: flex;
+align-content: space-between;
+}
