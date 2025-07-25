@@ -110,7 +110,7 @@
 }
 
 .add-to-cart {
-    color: #FFFFFF ;
+    color: #FFFFFF;
     background-color: #E95A08;
     padding: 10px;
     border: none;
@@ -118,4 +118,72 @@
     font-size: 16px;
     font-weight: 500;
     width: 100%;
+}
+
+/* PLANTS LOVER SECTION */
+.feature-section {
+    width: 1140px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.feature-image-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.feature-image {
+    display: block;
+    width: 450px;
+    height: 450px;
+    position: relative;
+}
+
+.seal-wrapper {
+    position: absolute;
+    top: -80px;
+    right: -70px;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.seal-wrapper img {
+    width: 180px;
+    height: 180px;
+    background-color: transparent;
+}
+
+.heading-flower{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.lover-ulist{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lover-list{
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.lover-list::before {
+    content: '•';
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
 }
