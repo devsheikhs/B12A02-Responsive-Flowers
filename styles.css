@@ -24,7 +24,9 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 16px;
     margin: auto;
     align-items: center;
 }
@@ -50,9 +52,13 @@ body {
     font-weight: 400;
 }
 
+
+
 /* BANNER SECTION */
 .banner {
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 16px;
     display: flex;
     margin: auto;
     margin-top: 120px;
@@ -75,7 +81,9 @@ body {
 /* PRODUCT CARD SECTION */
 .product-card {
     margin: auto;
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 16px;
     margin-top: 120px;
 }
 
@@ -122,7 +130,9 @@ body {
 
 /* PLANTS LOVER SECTION */
 .feature-section {
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 16px;
     margin: auto;
     margin-top: 120px;
 }
@@ -191,7 +201,9 @@ body {
 /* LATES DEAL SECTION */
 .latest-deals {
     margin: auto;
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 16px;
     margin-top: 120px;
 }
 
@@ -252,6 +264,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
+    z-index: 2;
 }
 
 .deal-text h3 {
@@ -270,6 +283,7 @@ body {
     color: white;
     font-size: 28px;
     font-weight: 500;
+
 }
 
 .deal-h3-left {
@@ -287,6 +301,7 @@ body {
 .deal-text a {
     text-decoration: underline;
     background-color: transparent;
+    text-underline-offset: 3px;
 }
 
 .deal-card::before {
@@ -353,7 +368,9 @@ body {
 
 /* FOOTER */
 .footer {
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 16px;
     margin: 80px auto;
 }
 
@@ -369,14 +386,15 @@ body {
 }
 
 .footer-logo img {
-    max-width: 150px;    
+    max-width: 150px;
 }
 
 .footer-logo p {
-    color: #5A5A5A;
+    color: rgba(0, 0, 0, 0.5);
     line-height: 1.6;
     margin-top: 20px;
     text-align: left;
+    font-size: 22px;
 }
 
 .footer-menu-1 ul,
@@ -409,4 +427,252 @@ body {
 .footer-social img {
     width: 36px;
     height: 36px;
+}
+
+/* RESPONSIVE */
+/* MOBILE HEADER NAVIGATION FIX */
+@media (max-width: 600px) {
+    .nav-links li:not(:last-child) {
+        display: none;
+    }
+
+    .nav {
+        padding: 16px;
+    }
+
+    .nav img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .menu-dif-color2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .menu-dif-color2 i {
+        margin-right: 6px;
+    }
+}
+
+/* BANNER MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .banner {
+        flex-direction: column;
+        margin-top: 60px;
+        text-align: left;
+    }
+
+    .banner>div:nth-child(2) {
+        order: -1;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .banner-para {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* PRODUCT CARD MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        width: 100%;
+    }
+
+    .plant-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .plant-img-bg img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .product-card {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* PLANTS LOVER MOBILE */
+@media (max-width: 600px) {
+    .feature-container {
+        flex-direction: column;
+        text-align: left;
+        gap: 32px;
+    }
+
+    .feature-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .seal-wrapper {
+        display: none;
+    }
+
+    .heading-flower {
+        font-size: 28px;
+    }
+
+    .lover-list {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .lover-list::before {
+        font-size: 16px;
+        top: 0.2em;
+    }
+}
+
+/* LATEST DEAL MOBILE */
+@media (max-width: 600px) {
+    .deals-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .deal-card {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .deal-card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .deal-h3-right,
+    .deal-h3-left {
+        font-size: 20px;
+    }
+
+    .deal-left-shop,
+    .deal-right-shop {
+        font-size: 14px;
+    }
+}
+
+/* SUBSCRIBER MOBILE */
+@media (max-width: 600px) {
+    .subscribe-section {
+        width: 100%;
+        padding: 40px 16px;
+        margin: 60px 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .subscribe-content h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        max-width: 100%;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 60%;
+        padding: 14px 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 0;
+    }
+
+    .subscribe-form input[type="submit"] {
+        width: 40%;
+        padding: 14px 12px;
+        font-size: 16px;
+        background-color: #E95A08;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+    }
+}
+
+/* FOOTER */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-logo p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .footer-menu-1,
+    .footer-menu-2 {
+        width: 100%;
+    }
+
+    .footer-menu-1 ul,
+    .footer-menu-2 ul {
+        padding-left: 0;
+    }
+
+    .footer-menu-1 li,
+    .footer-menu-2 li {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .footer-menu-1,
+    .footer-menu-2 {
+        display: block;
+    }
+
+    .footer-menu-1 ul,
+    .footer-menu-2 ul {
+        display: block;
+    }
+
+    .footer-social {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 10px;
+    }
+
+    .footer-social a img {
+        width: 32px;
+        height: 32px;
+    }
 }
